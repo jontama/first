@@ -7,15 +7,13 @@
 		<include refid="common.pagingPre"/> 
 		<![CDATA[
 			SELECT
-				ROW_NUMBER() OVER (ORDER BY IDX DESC) RNUM,
-			    IDX,
-			    TITLE,
-			    HIT_CNT,
-			    TO_CHAR(CREA_DTM, 'YYYY.MM.DD') AS CREA_DTM
+				'1' RNUM,
+			    '1' IDX,
+			    '제' TITLE,
+			    '1' HIT_CNT,
+			    '1988.09.09' AS CREA_DTM
 			FROM
-			    TB_BOARD
-			WHERE
-				DEL_GB = 'N'
+			    DUAL
 		]]>
 		<include refid="common.pagingPost"/> 
 	</select>
