@@ -41,7 +41,7 @@
 			<id>codelds</id>
 			<name>ORACLE JDBC Repository</name>
 			<url>https://code.lds.org/nexus/content/groups/main-repo</url>
-		</repository> 
+		</repository>
 	</repositories>
 	
 	<dependencies>
@@ -143,11 +143,12 @@
 		
 		<!-- Oracle -->
         <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.4.0-atlassian-hosted</version>
-            <scope>test</scope>
-        </dependency>
+<groupId>com.oracle</groupId>
+<artifactId>ojdbc6</artifactId>
+<version>11.2.0.3</version>
+</dependency>
+
+
 
 		<!-- AspectJ -->
 		<dependency>
