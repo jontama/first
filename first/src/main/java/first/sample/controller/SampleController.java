@@ -24,8 +24,8 @@ public class SampleController {
 	@RequestMapping(value="/sample/openBoardList.do")
     public ModelAndView openBoardList(CommandMap commandMap) throws Exception{
     	ModelAndView mv = new ModelAndView("/sample/boardList");
-    	
-    	return mv;
+        System.out.println("1234411322244333333");
+        return mv;
     }
 	
 	@RequestMapping(value="/sample/selectBoardList.do")

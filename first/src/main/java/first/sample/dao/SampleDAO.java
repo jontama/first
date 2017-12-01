@@ -16,7 +16,8 @@ public class SampleDAO extends AbstractDAO{
 	}
 
 	public void insertBoard(Map<String, Object> map) throws Exception{
-		insert("sample.insertBoard", map);
+        System.out.println("sdsd");
+        insert("sample.insertBoard", map);
 	}
 
 	public void updateHitCnt(Map<String, Object> map) throws Exception{
