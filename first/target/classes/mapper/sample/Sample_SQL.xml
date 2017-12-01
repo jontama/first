@@ -4,18 +4,14 @@
 <mapper namespace="sample">
 	
 	<select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
-		<include refid="common.pagingPre"/> 
+		 
 		<![CDATA[
 			SELECT
-				'1' RNUM,
-			    '1' IDX,
-			    '제' TITLE,
-			    '1' HIT_CNT,
-			    '1988.09.09' AS CREA_DTM
+				*
 			FROM
-			    DUAL
+			    STUDENT
 		]]>
-		<include refid="common.pagingPost"/> 
+		 
 	</select>
 	
 	<insert id="insertBoard" parameterType="hashmap" useGeneratedKeys="true" keyProperty="IDX">
